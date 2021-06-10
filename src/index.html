@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Инвестиционные проекты</title>
+</head>
+<body>
+<header>
+    <div class="wrapper">
+        <div class="header">
+            <div class="header_logo">
+                <img src="images/logo.svg" alt="logotype" title="Логотип">
+            </div>
+            <nav class="header_nav">
+                <ul class="header_nav_menu">
+                    <li class="header_nav_menu_item"><a href="#">Главная</a></li>
+                    <li class="header_nav_menu_item"><a href="#analytics">Аналитика</a></li>
+                    <li class="header_nav_menu_item"><a href="#video">Видео</a></li>
+                    <li class="header_nav_menu_item"><a href="#calculator">Калькулятор</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="wrapper">
+        <div class="description">
+            <a name="analytics"></a>
+            <div class="description_title">
+                <div class="description_title_content">
+                    <h1>Аналитика и прогнозирование объема потребления материалов в строительстве</h1>
+                    <div class="description_title_content_box">
+                        <div class="description_title_content_box_item">
+                            <p class="number">138</p>
+                            <p class="stroke">Видов материалов</p>
+                        </div>
+                        <div class="description_title_content_box_item">
+                            <p class="number">4 000</p>
+                            <p class="stroke">Частных проектов</p>
+                        </div>
+                        <div class="description_title_content_box_item">
+                            <p class="number">4 500</p>
+                            <p class="stroke">Государственных и ГЧП проектов</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="description_title_list">
+                    <ul>
+                        <li><span>Анализ каждого типа объекта с распределением основных строительных материалов</span></li>
+                        <li><span>Расчет затрат будущих периодов с учетом прогноза социально-экономического развития РФ</span></li>
+                        <li><span>Региональные корректирующие коэффициенты на основании политики Министрой России</span></li>
+                        <li><span>Аналитический период с 2020 по 2036 год, с ежедневным обновлением и добвалением проектов
+                        </span></li>
+                        <li><span>Более 10 000 объектов, сгруппированных по 381 типу</span></li>
+                        <li><span>Расход по каждому объекту в разрезе 75 видов материалов</span></li>
+                        <li><span>Группировка по 85 регионам и 8 федеральным округом РФ</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="wrapper">
+        <a name="video"></a>
+        <div class="video">
+            <iframe width="100%" src="https://www.youtube.com/embed/B-aaFqB8zYg" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""
+                    class="predict-video"></iframe>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="wrapper">
+        <div class="calculator">
+            <a name="calculator"></a>
+            <div class="calculator_title">
+                <h2>Расчет расхода стройматериалов для крупных строящихся объектов в РФ</h2>
+            </div>
+            <div class="calculator_material">
+                <div class="calculator_material_checkbox">
+                    <input id="subscription" type="checkbox">
+                    <label for="subscription">Текущая подписка</label>
+                </div>
+                <input id="material" type="text" placeholder="Выберите материал" name="материал" size="120"/>
+            </div>
+            <div class="calculator_line"></div>
+            <div class="calculator_item">
+                <div class="calculator_item_list">
+                    <label for="time_year">Период строительства</label>
+                    <div class="calculator_item_list_container">
+                        <div class="calculator_item_list_container-select">
+                            <select size="1" name="menu" id="time_year" class="time" tabindex="1">
+                                <option value="year">2021</option>
+                                <option value="year">2022</option>
+                                <option value="year">2023</option>
+                                <option value="year">2025</option>
+                            </select>
+                        </div>
+                        <div class="calculator_item_list_container-select">
+                            <select size="1" name="menu" class="time_out" tabindex="1">
+                                <option value="year">2021</option>
+                                <option value="year">2022</option>
+                                <option value="year">2023</option>
+                                <option value="year">2025</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculator_item_content">
+                    <label for="region">Регион / область</label>
+                    <input id="region" type="text" name="region" size="25"/>
+                </div>
+                <div class="calculator_item_content">
+                    <label for="district">Федеральный округ</label>
+                    <input id="district" type="text" name="district" size="25"/>
+                </div>
+            </div>
+            <div class="calculator_item">
+                <div class="calculator_item_content">
+                    <label for="investments">Инвестиции (млн. руб.)</label>
+                    <div class="container">
+                        <input id="investments" type="text" name="district" size="1" placeholder="От"/>
+                        <input id="investments_out" type="text" name="district" size="1" placeholder="До"/>
+                    </div>
+                </div>
+                <div class="calculator_item_content">
+                    <label for="type">Тип объекта</label>
+                    <input id="type" type="text" name="district" size="25"/>
+                </div>
+            </div>
+            <div class="calculator_keys">
+                <div class="calculator_keys_checkbox">
+                    <div class="suspended-focus">
+                        <input id="suspended" type="checkbox"/>
+                        <label for="suspended">Показать приостановленные</label>
+                    </div>
+                    <div class="government-focus">
+                        <input id="government" type="checkbox"/>
+                        <label for="government">Только госзакупки</label>
+                    </div>
+                </div>
+                <div class="calculator_keys_button">
+                    <button class="calculator_keys_button-statistics" type="submit" value="statistics"> Показать статистику</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="wrapper">
+        <div class="sprite">
+            <ul>
+                <li class="sprite-item">
+                    <a href="javascript:void(0);"></a>
+                </li>
+                <li class="sprite-item">
+                    <a href="javascript:void(0);"></a>
+                </li>
+                <li class="sprite-item">
+                    <a href="javascript:void(0);"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,54 @@
+@import "../styles/normalize.scss";
+@import "../styles/header.scss";
+@import "../styles/description.scss";
+@import "../styles/video.scss";
+@import "../styles/calculator.scss";
+@import "../styles/footer.scss";
+
+body {
+  color: #575757;
+  font-size: 16px;
+  font-family: "Gilroy", sans-serif;
+  background-color: #f3f3f3;
+}
+
+.wrapper {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #242328;
+  font-size: 32px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: normal;
+  width: 70%;
+}
+
+h2 {
+  color: #242328;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  width: 50%;
+  margin: 0 auto;
+}
+
+button:hover,
+a:hover {
+  cursor: pointer;
+}
+
+input:focus {
+  background-color: #dbe8f8;
+}
+
+header {
+  background: linear-gradient(0.25turn, #a9d0ff, #7cb7ff, #667ee2, #2445d2);
+}
+
+footer {
+  background-color: #f2f0f0;
+}
